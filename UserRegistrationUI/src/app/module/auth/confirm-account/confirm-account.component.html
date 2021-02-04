@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="ml-4">Email Confirmation Page</h2>
+            </div>
+            <div class="card-body">
+                <div *ngIf="isLoading" style="text-align: center;">
+                    <app-loading-spinner></app-loading-spinner>
+                </div>
+                <div class="alert alert-primary" *ngIf="emailConfirmed">
+                    <p>Email Confirmed. Please login</p>
+                    <a class="signupBtn" routerLink="/login">Go to Login page</a>
+                </div>
+                <div class="alert alert-primary" *ngIf="!emailConfirmed">
+                    Unable to confirm Email
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

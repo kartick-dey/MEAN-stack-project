@@ -1,0 +1,39 @@
+.has-error {
+    color: red;
+}
+.has-error input{
+    border-color: #DC143C;
+}
+
+.fa-eye-slash:hover,
+.fa-eye:hover {
+  cursor: pointer;
+}
+
+button.disabled,
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.errorMessageStyle {
+    font-size: small;
+}
+
+.textAlign {
+    text-align: center;
+}
+.addressTextAlign {
+    text-align: right;
+}
+.fontWeight {
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .loginBtn {
+        text-align: center;
+    }
+}
